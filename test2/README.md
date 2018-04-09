@@ -40,4 +40,4 @@ rectangle 图书管理系统{
 @enduml
 ```
 ###1.2.用例图如下
-![usecase](图书管理系统的用例图.png)
+![usecase](图书管理系统的用例关系图.png)
