@@ -6,7 +6,7 @@
 
 ### 1.1 类图PlantUML源码如下：
 
-``` usecase
+```
 @startuml
 package "图书管理系统" #DDDDDD{
 class 系统管理员 {
