@@ -1,0 +1,13 @@
+@startuml
+title 基于GitHub的实验管理平台--学生列表用例的顺序图
+actor users
+users -> login: 用户进行登录
+alt 如果users是老师
+	login -> terms:选择学期
+	terms -> course:先选择课程
+else 如果users是学生
+    login -> terms:选择学期
+	terms -> course:后选择课程
+end
+users -> login: 用户进行登录
+@enduml

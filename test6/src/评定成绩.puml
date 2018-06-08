@@ -1,0 +1,14 @@
+@startuml
+title 基于GitHub的实验管理平台--评定成绩用例的顺序图
+actor teachers
+== 查看成绩 ==
+teachers -> login:登录
+login -> students : 输入学生学号
+students -> grades
+grades -> tests
+tests --> teachers:每个实验的信息、成绩
+== 评定成绩 ==
+teachers -> login:登录
+login -> students : 输入学生学号
+students -> grades : 录入并提交每个实验的每项成绩
+@enduml
